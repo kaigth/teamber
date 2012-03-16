@@ -5,6 +5,7 @@ gem 'rails', '3.2.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
   gem 'cucumber'
 
 end
@@ -22,7 +23,12 @@ group :production do
 end
 
 group :test do
+  gem 'rspec-rails'
   gem 'capybara'
+  gem 'rb-fsevent'
+  gem 'growl'
+  gem 'guard-spork'
+  gem 'spork'
 
 end
 
